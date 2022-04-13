@@ -14,7 +14,8 @@ export class FormComponent implements OnInit {
  author!: string;
  person!: string;
 
-  newQuote = new Quote("", 0, 0,"", "",);
+
+  newQuote = new Quote("", 0, 0,"", "",new Date());
   @Output() addQuote = new EventEmitter<Quote>();
 
   submitNewQuote(form){

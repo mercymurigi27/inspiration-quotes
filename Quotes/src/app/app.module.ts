@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     FormComponent,
+    DatePipe,
    
   ],
   imports: [

@@ -6,22 +6,41 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Inspiration Quotes
+#### By MERCY MURIGI
+### This an application where a user can read and add daily inspiration quotes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Table of Contents
++ [Description](#description)
++ [Installation Requirements](#installation)
++ [Live link]()
++ [Technologies Used](#technology)
++ [Known Bugs](#bugs)
++ [Lisense](#lisense)
 
-## Build
+## Description
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Project meant to test our understanding of angular programming language and our understanding of components and directives to create an  application where a user can read and edit quotes.
+## Installation 
+### Requirements
 
-## Running unit tests
+* Either a computer,phone,tablet or an Ipad
+* An access to the Internet
+### Installation
+* Clone the github repo
+* Open the clone in a text editor and host it on your browser
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+[Go Back to the top]()
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Live link
+[Follow This Link]
 
-## Further help
+## Technology Used
+* Angular ccli to form the framework for the app
+* HTML- to build the structure of the page
+* CSS- to style the the pages
+* Javascript- to enable interractivity with the page.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##  copyrights
+    mercy murigi 2022

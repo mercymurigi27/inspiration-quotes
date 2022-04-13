@@ -1,28 +1,30 @@
 <h1>Welcome to Inspiration Quotes</h1>
 <app-form (addQuote)="addNewQuote($event)"></app-form>
 <div class="quo">
+    <h2 class="text-center fw-bold ">Our Daily Qoutes</h2>
     <ul *ngFor="let quote of quotes;let i = index">
         <li>
             <p>{{quote.quote}}</p>
- <button type="button" id="btn" (click)="toggleDetails(i)">View Author</button>
-            <p *ngIf='quote.showDescription'>
-                {{quote.author}}
-                {{quote.person}}
-            </p>
+            <button type="button" class="btn bg-success" id="btn" (click)="toggleDetails(i)">View Author</button>
+            <div *ngIf='quote.showDescription'>
+                <p> Author: {{quote.author}} </p>
+                <p>Posted by: {{quote.person}}</p>
+            </div>
+            <div>
+                <p id="day">Days passed since last edited : {{quote.date|date}}</p>
+            </div>
             
         </li>
         <div class="myButtons">
-            <button type="button" class="btn btn-primary bg-success" (click)="quote.increaseVotes()"><i class="fa-solid fa-thumbs-up">{{quote.upvote}}</i></button>
+           <p id="like"> <button type="button" class="btn btn-primary bg-success" (click)="quote.increaseVotes()"><i class="fa-solid fa-thumbs-up">{{quote.upvote}}</i></button>Like</p>
             
-            <button type="button" class="btn btn-danger bg-blue" (click)="quote.decreaseVotes()"><i class="fa-solid fa-thumbs-down">{{quote.downvote}}</i></button>
+            <p id="dislike"><button type="button" class="btn btn-danger bg-warning" (click)="quote.decreaseVotes()"><i class="fa-solid fa-thumbs-down">{{quote.downvote}}</i></button>Dislike</p>
          
         </div>
-        <!-- <div class="delete">
-            <button type="button" (click)="quoteDelete(true)"></button>
+        <div class="delete">
+            <button type="button" class="btn btn-danger" (click)="quoteDelete(i)">Delete Quote</button>
 
         </div>
-         -->
-
     </ul>
 </div>
    
