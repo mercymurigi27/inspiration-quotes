@@ -1,0 +1,26 @@
+*{
+    background-image: linear-gradient(to left,rgb(247, 233, 175),rgb(200, 198, 101));
+    justify-content: center;
+}
+
+h1{
+    padding: 20pt;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(8, 8, 8);
+}
+.mybuttons{
+    padding: 10pt;
+    color:brown;
+    display: inline-flex;
+}
+.quo{
+    font-size: 20pt;
+    margin-left:  10pc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+}

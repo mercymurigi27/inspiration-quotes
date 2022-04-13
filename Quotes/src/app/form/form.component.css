@@ -1,0 +1,19 @@
+#name, #author{
+    height: 50%;
+    width:20%;
+    border-style:solid; 
+    border-color: goldenrod;
+   
+}
+#quote{
+    height: 100%;
+    width: 75%;
+    border-style: solid;
+    border-color: goldenrod;
+}
+.card{
+    padding:20pt;
+    margin: 10%;
+    margin-left: 15%;
+    background-color: #c7c564;
+}

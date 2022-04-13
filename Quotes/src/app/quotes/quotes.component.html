@@ -1,0 +1,28 @@
+<h1>Welcome to Inspiration Quotes</h1>
+<app-form (addQuote)="addNewQuote($event)"></app-form>
+<div class="quo">
+    <ul *ngFor="let quote of quotes;let i = index">
+        <li>
+            <p>{{quote.quote}}</p>
+ <button type="button" id="btn" (click)="toggleDetails(i)">View Author</button>
+            <p *ngIf='quote.showDescription'>
+                {{quote.author}}
+                {{quote.person}}
+            </p>
+            
+        </li>
+        <div class="myButtons">
+            <button type="button" class="btn btn-primary bg-success" (click)="quote.increaseVotes()"><i class="fa-solid fa-thumbs-up">{{quote.upvote}}</i></button>
+            
+            <button type="button" class="btn btn-danger bg-blue" (click)="quote.decreaseVotes()"><i class="fa-solid fa-thumbs-down">{{quote.downvote}}</i></button>
+         
+        </div>
+        <!-- <div class="delete">
+            <button type="button" (click)="quoteDelete(true)"></button>
+
+        </div>
+         -->
+
+    </ul>
+</div>
+   
